@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { Feature, PlacesResponse } from '../interfaces/places';
 import { PlacesApiClient } from '../api';
 import { MapService } from './map.service';
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
 
 @Injectable({
   providedIn: 'root'
@@ -12,28 +9,6 @@ import { MapService } from './map.service';
 export class PlacesService {
 
   public useLocation?: [number, number];
-<<<<<<< HEAD
-
-  get isUserLocationReady():boolean{
-    return !!this.useLocation
-  }
-
-  constructor() {
-    this.getUserLocation();
-  }
-
-  public async getUserLocation():Promise<[number, number]> {
-
-    return new Promise ( ( resolve, reject) => {
-
-      navigator.geolocation.getCurrentPosition(
-        ({ coords }) => {
-          this.useLocation = [ coords.longitude, coords.latitude ];
-          resolve( this.useLocation );
-        },
-        ( err ) => {
-          alert('No se pudo obtener la geolocalizacion');
-=======
   public isLoadingPlaces:boolean = false;
   public places:Feature[] = [];
 
@@ -58,16 +33,12 @@ export class PlacesService {
         },
         ( err ) => {
           alert('No se pudo obtener la geolocalización');
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
           console.log(err);
           reject();
         }
       );
 
     });
-<<<<<<< HEAD
-
-=======
   }
 
   getPlacesByQuery ( query:string = '' ) {
@@ -97,7 +68,6 @@ export class PlacesService {
 
   deletePlaces(){
     this.places = [];
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
   }
 
 }

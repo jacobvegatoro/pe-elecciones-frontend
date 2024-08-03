@@ -11,11 +11,6 @@ import { MapsRoutingModule } from './maps-routing.module';
 import * as mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 import { CounterAloneComponent } from '../alone/components/counter-alone/counter-alone.component';
 import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
-<<<<<<< HEAD
-import { MapScreenComponent } from './pages/map-screen/map-screen.component';
-import { MapViewComponent } from './components/map-view/map-view.component';
-import { LoadingComponent } from './components/loading/loading.component';
-=======
 import { MapPageComponent } from './pages/map-page/map-page.component';
 import { MapViewComponent } from './components/map-view/map-view.component';
 import { LoadingComponent } from './components/loading/loading.component';
@@ -23,7 +18,7 @@ import { BtnMyLocationComponent } from './components/btn-my-location/btn-my-loca
 import { AngularLogoComponent } from './components/angular-logo/angular-logo.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
+import { MapScreenComponent } from './pages/map-screen/map-screen.component';
 (mapboxgl as any).accessToken = 'pk.eyJ1IjoiamFjb2J2ZWdhIiwiYSI6ImNsc3NieHpyYTBkazQyamxvZjY5MGdxeGQifQ.MkOFifLlJLTEg5aWg2zqAQ';
 
 
@@ -35,11 +30,9 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     MiniMapComponent,
     PropertiesPageComponent,
     ZoomRangePageComponent,
-<<<<<<< HEAD
     MapScreenComponent,
     MapViewComponent,
     LoadingComponent,
-=======
     MapPageComponent,
     MapViewComponent,
     LoadingComponent,
@@ -47,7 +40,6 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     AngularLogoComponent,
     SearchBarComponent,
     SearchResultsComponent,
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
   ],
   imports: [
     CommonModule, 

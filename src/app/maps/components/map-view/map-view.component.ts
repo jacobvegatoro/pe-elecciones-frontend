@@ -1,28 +1,14 @@
-<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { PlacesService } from '../../services';
-=======
 import { MapService } from './../../services/map.service';
-import { PlacesService } from './../../services/places.service';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Map, Popup, Marker } from 'mapbox-gl';
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
 
 @Component({
   selector: 'app-map-view',
   templateUrl: './map-view.component.html',
   styleUrls: ['./map-view.component.css']
 })
-<<<<<<< HEAD
-export class MapViewComponent implements OnInit {
-
-  constructor( private placesService:PlacesService ){ }
-
-  ngOnInit(): void {
-    console.log( this.placesService.useLocation );
-  }
-
-=======
 export class MapViewComponent implements AfterViewInit {
 
   @ViewChild('mapDiv') mapDivElement!:ElementRef;
@@ -59,5 +45,4 @@ export class MapViewComponent implements AfterViewInit {
   }
 
 
->>>>>>> a4d065769d81e27212f4c21581cad657f05918de
 }
