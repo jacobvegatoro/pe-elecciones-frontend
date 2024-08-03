@@ -11,6 +11,9 @@ import { MapsRoutingModule } from './maps-routing.module';
 import * as mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 import { CounterAloneComponent } from '../alone/components/counter-alone/counter-alone.component';
 import { SideMenuComponent } from '../alone/components/side-menu/side-menu.component';
+import { MapScreenComponent } from './pages/map-screen/map-screen.component';
+import { MapViewComponent } from './components/map-view/map-view.component';
+import { LoadingComponent } from './components/loading/loading.component';
 (mapboxgl as any).accessToken = 'pk.eyJ1IjoiamFjb2J2ZWdhIiwiYSI6ImNsc3NieHpyYTBkazQyamxvZjY5MGdxeGQifQ.MkOFifLlJLTEg5aWg2zqAQ';
 
 
@@ -22,6 +25,9 @@ import { SideMenuComponent } from '../alone/components/side-menu/side-menu.compo
     MiniMapComponent,
     PropertiesPageComponent,
     ZoomRangePageComponent,
+    MapScreenComponent,
+    MapViewComponent,
+    LoadingComponent,
   ],
   imports: [
     CommonModule, 
