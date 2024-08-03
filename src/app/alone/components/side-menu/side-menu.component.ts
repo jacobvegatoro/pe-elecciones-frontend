@@ -23,6 +23,7 @@ export class SideMenuComponent {
     { route: '/maps/properties', name: 'Houses' },
     { route: '/alone', name: 'Alone Page' },
     { route: '/maps/screen', name: 'Map Screen' },
+    { route: '/maps/map', name: 'Main' },
   ];
 
 }
